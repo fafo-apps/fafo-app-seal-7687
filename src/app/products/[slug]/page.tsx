@@ -1,5 +1,6 @@
 import { getProductBySlug } from '@/app/db/repositories/ProductsRepository';
-import Image from 'next/image';
+
+export const dynamic = 'force-dynamic';
 
 function formatPrice(cents: number, currency: string) {
   return new Intl.NumberFormat('en-US', { style: 'currency', currency }).format(cents / 100);

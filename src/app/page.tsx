@@ -1,6 +1,8 @@
 import { getAllProducts } from '@/app/db/repositories/ProductsRepository';
 import ProductCard from '@/app/components/ProductCard';
 
+export const dynamic = 'force-dynamic';
+
 export default async function Home() {
   const products = await getAllProducts();
   return (
